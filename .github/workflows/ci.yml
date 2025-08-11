@@ -20,3 +20,6 @@ jobs:
 
       - name: Force Failure
         run: go test ./...
+      
+      - name: Run tests with coverage
+        run: go test -cover ./...
