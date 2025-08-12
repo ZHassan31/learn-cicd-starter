@@ -24,10 +24,6 @@ type apiConfig struct {
 //go:embed static/*
 var staticFiles embed.FS
 
-func addition(a int, b int) int {
-	return a + b
-}
-
 func main() {
 	err := godotenv.Load(".env")
 	if err != nil {
